@@ -1,6 +1,6 @@
 # Gallery PAL
 
-Hello, PAL GAllery for XPLA blockchain
+Hello, PAL Gallery for XPLA blockchain
 
 ## Getting Started
 
