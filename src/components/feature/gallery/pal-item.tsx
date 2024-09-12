@@ -1,12 +1,19 @@
+import useCanvas from './use-canvas'
+
 interface Props {
-  image: string
+  imageList: string[]
   tokenId: string
 }
 
-const PalGalleryItem = ({ image, tokenId }: Props) => {
+const PalGalleryItem = ({ imageList, tokenId }: Props) => {
+  const WIDTH = 512
+  const HEIGHT = 512
+
+  const { canvasRef } = useCanvas(imageList, WIDTH, HEIGHT)
+
   return (
     <div>
-      <img src={image} alt={tokenId} width={300} height={300} />
+      <canvas ref={canvasRef} width={512} height={512} />
       <p>{tokenId}</p>
     </div>
   )

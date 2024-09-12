@@ -18,6 +18,7 @@ const usePalList = () => {
         xplaConfig.MAINNET.PAL_CONTRACT,
         'PAL #976',
       )
+      console.log(tokenList)
       setPalList((prevList) => [...prevList, tokenList])
     } catch (err) {
       console.error('PAL 계약 가져오기 오류: ', err)
